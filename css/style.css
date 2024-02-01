@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+    margin: 0;
+    
+}
+
+
+
+#wrapper{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "img"
+    
+    ;
+    grid-template-rows: 50px 100px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*NAV*/
+
+#nav{
+    grid-area: nav;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*IMG*/
+
+img{
+    grid-area: img;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 500px) {
+    #blender, #badminton, #om_mig{
+        display: none;
+    }
+
+}
