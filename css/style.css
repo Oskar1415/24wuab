@@ -1,6 +1,7 @@
 body{
     background-color: black;
     margin: 0;
+    color: white;
     
 }
 
@@ -10,11 +11,17 @@ body{
     display: grid;
     grid-template-areas: 
     "nav"
-    "wow"
+    "tx1"
+    "im1"
+    "tx2"
+    "im2"
+    "tx3"
+    "im3"
+
     
     ;
-    grid-template-rows: 50px 10px;
 }
+
 
 
 a {
@@ -24,23 +31,49 @@ a {
 
 /*NAV*/
 
-#nav{
+#navbar{
     grid-area: nav;
-    color: white;
+    color: blue;
     display: flex;
     justify-content: space-around;
+    height: 10vh;
+}
+
+
+#menu{
+    position: absolute;
+    left: -1px;
 }
 
 /*IMG*/
 
 img{
-    grid-area: wow;
     width: 100%;
-    height: 100px;
+    object-fit:cover;
     overflow: hidden;
     
 }
 
+#img1{
+    grid-area: im1;
+}
+
+#txt1{
+    grid-area: tx1;
+    background-color: red;
+}
+
+#img2{
+    grid-area: im1;
+}
+
+#img3{
+    grid-area: im1;
+}
+
+.visible {
+    display: none;
+}
 
 @media screen and (max-width: 500px) {
     #blender, #badminton, #om_mig{
