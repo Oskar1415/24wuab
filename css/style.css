@@ -40,9 +40,14 @@ a {
 }
 
 
+#menu_button{
+    display: none;
+
+}
+
 #menu{
+    display: none;
     position: absolute;
-    left: -1px;
 }
 
 /*IMG*/
@@ -72,12 +77,44 @@ img{
 }
 
 .visible {
-    display: none;
+    display: none !important;
 }
+
+
+#menu.opacity{
+    animation: fadeInAnimation ease 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#menu:not(.opacity) {
+    animation: fadeInAnimation ease 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
 
 @media screen and (max-width: 500px) {
     #blender, #badminton, #om_mig{
         display: none;
     }
 
+    #menu_button, #menu{
+        display:block;
+    }
+
 }
+
+

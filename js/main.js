@@ -7,10 +7,12 @@ menu_button.addEventListener("click", (e) => {
     opened = !opened
     if(opened) {        
         menu.classList.add("visible")
+        menu.classList.remove("opacity")
         menu_button.innerText = "stäng";
         return;
     }
     menu.classList.remove("visible")
+    menu.classList.add("opacity")
     menu_button.innerText = "öppna";
     
 })
