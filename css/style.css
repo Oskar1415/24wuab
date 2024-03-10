@@ -2,7 +2,8 @@ body{
     background-color: black;
     margin: 0;
     color: white;
-    
+    font-family: "Madimi One", sans-serif;
+
 }
 
 
@@ -22,6 +23,10 @@ body{
     ;
 }
 
+/*blob*/
+#blob{
+
+}
 
 
 a {
@@ -33,10 +38,11 @@ a {
 
 #navbar{
     grid-area: nav;
-    color: blue;
     display: flex;
     justify-content: space-around;
-    height: 10vh;
+    align-items: center;
+    height: 5vh;
+    background-color: #05f776;
 }
 
 
@@ -59,13 +65,19 @@ img{
     
 }
 
+.start__img{
+    max-width: 100vh !important;
+    display: flex;
+    justify-content: center;
+}
+
 #img1{
     grid-area: im1;
+
 }
 
 #txt1{
     grid-area: tx1;
-    background-color: red;
 }
 
 #img2{
@@ -75,6 +87,35 @@ img{
 #img3{
     grid-area: im1;
 }
+
+
+#txt_on_img1{
+    position: relative;
+    top: 10px;
+    margin: 50px;
+}
+
+#img1:hover #fade_img1{
+    opacity: 1;
+    background-image: linear-gradient(#00000000, black 40%);
+    position: relative;
+    bottom: 100px;
+    height: 100px;
+
+
+    
+}
+
+#fade_img1{
+    opacity: 0;
+    height: 100px;
+}
+
+
+
+
+
+
 
 .visible {
     display: none !important;
