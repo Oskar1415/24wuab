@@ -43,6 +43,7 @@ a {
 }
 
 
+
 #menu_button{
     display: none;
 
@@ -57,6 +58,57 @@ a {
     display: flex;
     justify-content: center;
 }
+
+
+
+/*meny till mobil*/
+
+#mobile_menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.visible {
+
+    top: 100px !important;
+}
+
+#menu{
+    display: block;
+    list-style: none;
+    top: -315px;
+    backdrop-filter: blur(5px);
+    text-shadow: 0px 0px 10px black;
+    transition: top 500ms;
+    width: 100%;
+
+    height: 300px;
+
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: column;
+
+}
+
+
+#menu_button{
+    width: 100px;
+
+}
+
+
+.nav_item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+
+}
+
+
 
 /*IMG i början*/
 
@@ -76,7 +128,6 @@ img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 
 
 }
@@ -113,38 +164,12 @@ img{
     opacity: 0;
     height: 45vw;
     margin-top: -40vw;
+    transition: opacity 200ms;
 }
 
 
 
-/*meny till mobil*/
 
-.visible {
-    display: none !important;
-}
-
-
-#menu.opacity{
-    animation: fadeInAnimation ease 0.4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#menu:not(.opacity) {
-    animation: fadeInAnimation ease 0.4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;
-}
-
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
 
 
 
@@ -166,7 +191,7 @@ img{
         display: none;
     }
 
-    #menu_button, #menu{
+    #menu_button{
         display:block;
     }
 
