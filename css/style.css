@@ -137,15 +137,6 @@ img{
 }
 
 
-/*footer*/
-
-#footer{
-    background-color: #05f776;
-    height: 10rem;
-}
-
-
-
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -157,8 +148,21 @@ img{
 
 
 
+
+
+/*footer*/
+
+#footer{
+    background-color: #05f776;
+    height: 10rem;
+}
+
+
+
+/*media grejs*/
+
 @media screen and (max-width: 500px) {
-    #blender, #badminton, #om_mig{
+    #blender, #badminton, #om_mig, #navbar{
         display: none;
     }
 
