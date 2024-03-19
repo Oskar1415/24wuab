@@ -3,6 +3,7 @@ body{
     margin: 0;
     color: white;
     font-family: "Oswald", sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -61,33 +62,39 @@ a {
 
 
 
+
+
+
 /*meny till mobil*/
 
 #mobile_menu{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    background-color:#05f776;
     
 }
 
 .visible {
 
-    top: 100px !important;
+    top: 50px !important;
 }
 
 #menu{
+    overflow: hidden;
+    position: absolute;
     display: block;
     list-style: none;
-    top: -315px;
+    top: -515px;
     backdrop-filter: blur(5px);
     text-shadow: 0px 0px 10px black;
     transition: top 500ms;
-    width: 100%;
-
-    height: 300px;
+    width: 100vw;
+    left: -45px;
+    height: 500px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content:end;
 
     flex-direction: column;
 
@@ -95,7 +102,7 @@ a {
 
 
 #menu_button{
-    width: 100px;
+    width: 50px;
 
 }
 
@@ -105,6 +112,7 @@ a {
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    margin: 15px;
 
 }
 
