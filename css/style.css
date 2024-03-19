@@ -178,7 +178,20 @@ img{
 
 
 
+/*Blender.html*/
 
+#wrapper_blender{
+    
+}
+
+#images{
+    margin: 0;
+}
+
+.images_items{
+    height: 100%;
+    margin: 0;
+}
 
 
 
@@ -188,8 +201,16 @@ img{
 #footer{
     background-color: #05f776;
     height: 10rem;
+    display: flex;
+    justify-content: center;
+    
+   
 }
 
+#footer_links{
+    margin-top: 50px;
+    list-style: none;
+}
 
 
 /*media grejs*/
